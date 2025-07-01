@@ -1,9 +1,10 @@
 'use strict'
 
-var gSize = 100
+var gSize = getRandomInt(20, 61)
 
 function onBallClick(clickedEl) {
-    gSize += 50
+    // gSize += 50
+    gSize = getRandomInt(20, 61)
     clickedEl.style.width = gSize + 'px'
     clickedEl.style.height = gSize + 'px'
     clickedEl.innerText = gSize
@@ -13,7 +14,7 @@ function onBallClick(clickedEl) {
 }
 
 function limitBallSize(clickedEl) {
-    gSize = 100
+    gSize = getRandomInt(20, 61)
     clickedEl.style.width = gSize + 'px'
     clickedEl.style.height = gSize + 'px'
     clickedEl.innerText = gSize
